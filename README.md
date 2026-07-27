@@ -190,19 +190,8 @@ The value supplied through `--affiliation` should therefore match the organizati
 
 ## Important Notes
 
+- The script uses API Expanded record quota and does not use the Short Record option.
 - The script does not create an output file when the query returns zero records.
 - The script stops when the query exceeds the configured 100,000-record maximum.
 - A workbook may still be created when records are retrieved but no matching authors are found. This can help troubleshoot organization-name or address-matching issues.
 - API behavior, entitlements, and available fields depend on the user's Web of Science subscription and API access.
-
-## Recommended `.gitignore`
-
-Consider adding the following entries to a repository-level `.gitignore`:
-
-```gitignore
-.env
-.venv/
-__pycache__/
-*.py[cod]
-*.xlsx
-```
