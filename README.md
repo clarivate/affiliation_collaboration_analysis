@@ -26,7 +26,12 @@ affiliation_collaboration_analysis.py
 wosesrclient_robust.py
 requirements.txt
 README.md
-.env
+LICENSE
+.gitignore
+.env.example
+images/
+├── CollabAnalysis1.jpg
+└── CollabAnalysis2.jpg
 ```
 
 `wosesrclient_robust.py` is a required companion module and must be located in the same directory as the analysis script, unless it is installed as an importable Python module.
@@ -62,7 +67,21 @@ pip install -r requirements.txt
 
 ## API Key Setup
 
-Create a file named `.env` in the project directory:
+Copy the included `.env.example` file to `.env`, then replace the placeholder:
+
+### Windows PowerShell
+
+```powershell
+Copy-Item .env.example .env
+```
+
+### macOS or Linux
+
+```bash
+cp .env.example .env
+```
+
+Edit `.env` so it contains:
 
 ```dotenv
 EXPANDED_APIKEY=your_api_key_here
@@ -165,6 +184,26 @@ The workbook contains an **Affiliation Analysis** worksheet with run metadata fo
 
 The worksheet includes filters, frozen headers, wrapped text, and adjusted column widths.
 
+## Example Output
+
+The following screenshots show an example analysis for Auburn University. Click either image to open the full-size version.
+
+### Record and Collaboration Overview
+
+<a href="images/CollabAnalysis1.jpg">
+  <img src="images/CollabAnalysis1.jpg" alt="Example Excel output showing record metadata, citation counts, author totals, matching authors, matching addresses, and collaboration flags" width="100%">
+</a>
+
+*The first portion of the worksheet summarizes each publication, its citation counts, the number of matching authors and addresses, and whether the collaboration is internal-only.*
+
+### Affiliation and Author-Address Details
+
+<a href="images/CollabAnalysis2.jpg">
+  <img src="images/CollabAnalysis2.jpg" alt="Example Excel output showing matching author names, full affiliation addresses, suborganizations, and author-to-address relationships" width="100%">
+</a>
+
+*The remaining columns provide the matching author names, full institutional addresses, departments or suborganizations, and detailed author-to-address mappings.*
+
 ## Preflight Checks
 
 By default, the script performs two checks before retrieving the full result set:
@@ -195,3 +234,9 @@ The value supplied through `--affiliation` should therefore match the organizati
 - The script stops when the query exceeds the configured 100,000-record maximum.
 - A workbook may still be created when records are retrieved but no matching authors are found. This can help troubleshoot organization-name or address-matching issues.
 - API behavior, entitlements, and available fields depend on the user's Web of Science subscription and API access.
+
+## License
+
+The source code in this repository is available under the [MIT License](LICENSE).
+
+The MIT License applies to the repository's source code only. Access to the Web of Science Expanded API and use of Web of Science data remain subject to Clarivate's applicable subscription terms, API terms, and institutional entitlements.
