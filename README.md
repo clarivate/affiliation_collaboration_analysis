@@ -29,9 +29,8 @@ README.md
 LICENSE
 .gitignore
 .env.example
-images/
-├── CollabAnalysis1.jpg
-└── CollabAnalysis2.jpg
+CollabAnalysis1.jpg
+CollabAnalysis2.jpg
 ```
 
 `wosesrclient_robust.py` is a required companion module and must be located in the same directory as the analysis script, unless it is installed as an importable Python module.
