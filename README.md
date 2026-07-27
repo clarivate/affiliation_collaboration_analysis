@@ -27,7 +27,6 @@ wosesrclient_robust.py
 requirements.txt
 README.md
 LICENSE
-.gitignore
 .env.example
 CollabAnalysis1.jpg
 CollabAnalysis2.jpg
