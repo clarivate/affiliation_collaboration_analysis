@@ -190,16 +190,16 @@ The following screenshots show an example analysis for Auburn University. Click 
 
 ### Record and Collaboration Overview
 
-<a href="images/CollabAnalysis1.jpg">
-  <img src="images/CollabAnalysis1.jpg" alt="Example Excel output showing record metadata, citation counts, author totals, matching authors, matching addresses, and collaboration flags" width="100%">
+<a href="CollabAnalysis1.jpg">
+  <img src="CollabAnalysis1.jpg" alt="Example Excel output showing record metadata, citation counts, author totals, matching authors, matching addresses, and collaboration flags" width="100%">
 </a>
 
 *The first portion of the worksheet summarizes each publication, its citation counts, the number of matching authors and addresses, and whether the collaboration is internal-only.*
 
 ### Affiliation and Author-Address Details
 
-<a href="images/CollabAnalysis2.jpg">
-  <img src="images/CollabAnalysis2.jpg" alt="Example Excel output showing matching author names, full affiliation addresses, suborganizations, and author-to-address relationships" width="100%">
+<a href="CollabAnalysis2.jpg">
+  <img src="CollabAnalysis2.jpg" alt="Example Excel output showing matching author names, full affiliation addresses, suborganizations, and author-to-address relationships" width="100%">
 </a>
 
 *The remaining columns provide the matching author names, full institutional addresses, departments or suborganizations, and detailed author-to-address mappings.*
